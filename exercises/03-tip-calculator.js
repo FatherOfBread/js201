@@ -4,13 +4,28 @@
 // Based on:
 // good --> 20%
 // fair --> 15%
-// poor --> 10%
+// bad --> 10%
 //
 // Examples:
 // tipAmount(100, 'good') --> 20
 // tipAmount(40, 'fair') --> 6
 
+var bill, percent, people;
 
+function tipValue (qual){
+    if (qual == "good") {
+        percent=20;
+    } else if (qual == "fair") {
+        percent=15;
+    } else if (qual =="bad") {
+        percent=10;
+    }
+}
+
+function tipAmount (bill,quality) {
+    tipValue(quality)
+    return percent*bill/100;
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "totalAmount" that takes the same arguments as "tipAmount"
@@ -21,7 +36,10 @@
 // totalAmount(100, 'good') --> 120
 // totalAmount(40, 'fair') --> 46
 
+function totalAmount (bill,quality)  {
+    return bill + tipAmount (bill,quality) 
 
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "splitAmount" that takes a bill amount, the level of service,
@@ -31,3 +49,7 @@
 // Examples:
 // splitAmount(100, 'good', 5) --> 24
 // splitAmount(40, 'fair', 2) --> 23
+
+function splitAmount (bill,quality,people) {
+    return totalAmount (bill,quality) / people
+}

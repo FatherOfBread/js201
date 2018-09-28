@@ -23,3 +23,11 @@
 //   [null, 'X', 'X']
 //   ])
 // null
+
+
+//const emptyBoard = [
+//    [null, null, null],
+//    [null, null, null],
+//    [null, null, null],
+//]
+//return emptyBoard
