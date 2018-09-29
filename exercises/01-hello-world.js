@@ -5,6 +5,7 @@
 function hello (fname) {
     return 'Hello, ' + fname + '!'
 }
+// comment
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "helloDefault" such that if no name is given it will return
