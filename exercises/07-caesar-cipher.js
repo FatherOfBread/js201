@@ -8,17 +8,22 @@
 // > cipher('We hold these truths to be self-evident', 8)
 // 'em pwtl bpmam bzcbpa bw jm amtn-mdqlmvb'
 
+//function shiftCharacter (character, shift)
+//    var newChar = 
+ //   fromCharCode(character)
+
+
 function cipher (message, shift) {
-    var char
-    var i = 0
-    char = str.charat(i)
-    return char
+    var i = 2
+    var charCode = message.charCodeAt(i)
+    var newChar = String.fromCharCode(charChode)
+    return newChar
 }
 
-console.log(cipher ('abcd', 2))
+console.log(cipher('abcd', 2))
 
 
-// str.charat() is the function for returning the character at an index
+// str.charAt() is the function for returning the character at an index
 // charCodeAt()	Returns the Unicode of the character at the specified index
 // fromCharCode()	Converts Unicode values to characters
 // replace()	Searches a string for a specified value, or a regular expression, and returns a new string where the specified values are replaced

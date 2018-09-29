@@ -67,7 +67,7 @@ function makeBanner (bannerText) {
     var i
     var width = bannerText.length + 4
     var solid = repeatChar (width,"*")
-    var center = center = "\n* " + bannerText + " *\n"
+    var center = "\n* " + bannerText + " *\n"
     
     return solid + center + solid
 }
