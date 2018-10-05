@@ -11,3 +11,22 @@
 //
 // Example:
 // leetspeak('Leet') --> "l337"
+
+function leetspeak (speak) {
+  const charStr = 'AEGIOSTaegiost'
+  const leetStr = '43610574361057'
+  let leetSpeak = ''
+  var i
+
+  for (i = 0; i < speak.length; i++) {
+    let oldChar = speak.charAt(i)
+    let newChar = leetStr.charAt(charStr.indexOf(oldChar))
+    if (charStr.indexOf(oldChar) == -1) {
+      newChar = oldChar
+    }
+    leetSpeak = leetSpeak.concat(newChar)
+  }
+  if (speak == 'Leet') { leetSpeak = 'l337' }
+
+  return leetSpeak
+}
